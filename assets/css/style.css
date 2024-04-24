@@ -1,7 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--family);
 }
 
 header {
@@ -9,6 +9,11 @@ header {
   justify-content: space-around;
   margin: 20px;
   align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
 }
 nav a {
   margin: 0 15px;
@@ -24,7 +29,14 @@ nav a.active {
 }
 
 .fa-search {
-  background-color: grey;
+  background-color: #808080;
   padding: 10px;
   border-radius: 20px;
+}
+
+.hero {
+  background-image: url("assets/images/homeImg.jpeg");
+}
+p {
+  font-size: var(--para);
 }

@@ -34,9 +34,71 @@ nav a.active {
   border-radius: 20px;
 }
 
-.hero {
-  background-image: url("assets/images/homeImg.jpeg");
+.fa-bars-staggered {
+  display: none;
 }
+
 p {
   font-size: var(--para);
+  background-image: url("assets/images/") no-repeat cover center center;
+}
+
+/* hero styles */
+.hero {
+  text-align: center;
+  padding: 15rem 0;
+  background-color: #808080;
+}
+.categories .catCards {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px 10px;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  justify-content: center;
+}
+/* Navbar with <ul> <li> style */
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  justify-content: space-around;
+}
+
+.menu .menu-items li {
+  display: inline;
+}
+.menu .menu-items li a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  .fa-bars-staggered {
+    display: block;
+  }
+  .fa-bars-staggered:hover {
+  }
+
+  .catTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .categories .catCards {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    justify-content: center;
+  }
 }
